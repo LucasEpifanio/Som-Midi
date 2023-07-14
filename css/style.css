@@ -38,12 +38,11 @@ h1 {
   box-shadow: 3px 3px 0 var(--cinza);
   color: var(--roxo);
   cursor: pointer;
-  height: 120px;
-  font-size: 1.75em;
+  height: 7rem;
+  font-size: 1.75rem;
   font-weight: bold;
-  line-height: 120px;
   text-align: center;
-  width: 120px;
+  width: 7rem;
 }
 
 .tecla.ativa,
@@ -64,4 +63,11 @@ h1 {
 .tecla.active:focus,
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--roxo-escuro) inset, 1px 1px 10px var(--luz);
+}
+@media screen and (max-width:600px){
+  .tecla {
+    height: 5.8rem;
+    font-size: 1.4rem;
+    width: 5.8rem;
+  }
 }
